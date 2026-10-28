@@ -5,84 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>轻量级开源游戏合集 - 免费浏览器游戏 | Static Game Hub</title>
   <meta name="description" content="精选 itch.io 开源游戏、Ludum Dare 游戏 jam 作品与 Simple Game Tutorials 示例，免费在线游玩，轻量级静态站点。">
-  <meta name="keywords" content="开源游戏,浏览器游戏,itch.io,Ludum Dare,静态游戏,轻量级游戏">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://example.com/">
+  <meta name="keywords" content="开源游戏,浏览器游戏,itch.io,Ludum Dare,静态游戏,轻量级游戏,SEO,GEO">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://vip-4.github.io/static-game-hub/">
   <meta property="og:title" content="轻量级开源游戏合集">
   <meta property="og:description" content="精选开源浏览器游戏，免费在线游玩。">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://example.com/og-image.png">
+  <meta property="og:url" content="https://vip-4.github.io/static-game-hub/">
+  <meta property="og:image" content="https://vip-4.github.io/static-game-hub/og-image.png">
+  <meta property="og:locale" content="zh_CN">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="轻量级开源游戏合集">
+  <meta name="twitter:description" content="精选开源浏览器游戏，免费在线游玩。">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Static Game Hub",
-    "url": "https://example.com/",
+    "url": "https://vip-4.github.io/static-game-hub/",
     "description": "轻量级开源游戏合集，集成 SEO 与 GEO 优化。",
+    "inLanguage": "zh-CN",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://example.com/?q={search_term_string}",
+      "target": "https://vip-4.github.io/static-game-hub/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "这些游戏需要安装吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "所有游戏均在浏览器中运行，无需安装。" }
+      },
+      {
+        "@type": "Question",
+        "name": "游戏来源是什么？",
+        "acceptedAnswer": { "@type": "Answer", "text": "来自 itch.io 开源游戏、Ludum Dare jam 作品与 Simple Game Tutorials。" }
+      }
+    ]
+  }
+  </script>
   <style>
-    :root { --bg:#0f172a; --fg:#e2e8f0; --accent:#38bdf8; --card:#1e293b; }
+    :root { --bg:#0f172a; --fg:#e2e8f0; --accent:#38bdf8; --card:#1e293b; --muted:#94a3b8; }
     * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family: system-ui, sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+    body { font-family: system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
     header { padding:2rem 1rem; text-align:center; }
     h1 { font-size:2rem; color:var(--accent); }
+    nav { margin-top:.5rem; }
+    nav a { color:var(--muted); margin:0 .5rem; text-decoration:none; }
     main { max-width:1100px; margin:0 auto; padding:1rem; }
+    section { margin-bottom:2rem; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; }
     .card { background:var(--card); border-radius:12px; padding:1rem; }
     .card h2 { font-size:1.2rem; margin-bottom:.5rem; }
     .card a { color:var(--accent); text-decoration:none; }
     .card a:hover { text-decoration:underline; }
-    footer { text-align:center; padding:2rem 1rem; color:#94a3b8; font-size:.9rem; }
+    .faq { background:var(--card); border-radius:12px; padding:1rem; }
+    .faq h3 { color:var(--accent); margin-bottom:.5rem; }
+    footer { text-align:center; padding:2rem 1rem; color:var(--muted); font-size:.9rem; }
+    a:focus { outline:2px solid var(--accent); outline-offset:2px; }
   </style>
 </head>
 <body>
-  <header>
+  <a href="#main" class="skip-link">跳到主要内容</a>
+  <header role="banner">
     <h1>轻量级开源游戏合集</h1>
     <p>精选 itch.io 开源游戏 · Ludum Dare jam 作品 · Simple Game Tutorials 示例</p>
+    <nav aria-label="主导航">
+      <a href="#games">游戏</a>
+      <a href="#faq">常见问题</a>
+      <a href="#sources">来源</a>
+    </nav>
   </header>
-  <main>
-    <section class="grid">
-      <article class="card">
-        <h2>Tetris.html (开源)</h2>
-        <p>Box Dude Studio 制作的开源俄罗斯方块，HTML5。</p>
-        <a href="https://boxdude.itch.io/tetrishtml" target="_blank" rel="noopener">在 itch.io 玩</a>
-      </article>
-      <article class="card">
-        <h2>PRISMHORN</h2>
-        <p>CSAF 制作的 13KB roguelite，MIT 许可。</p>
-        <a href="https://csaf.itch.io/prismhorn" target="_blank" rel="noopener">在 itch.io 玩</a>
-      </article>
-      <article class="card">
-        <h2>Nanoscopic</h2>
-        <p>stgiga 制作的极小体积浏览器游戏。</p>
-        <a href="https://stgiga.itch.io/nanoscopic" target="_blank" rel="noopener">在 itch.io 玩</a>
-      </article>
-      <article class="card">
-        <h2>Up in the Air</h2>
-        <p>Julian Fietkau 开源短篇浏览器游戏。</p>
-        <a href="https://jfietkau.itch.io/up-in-the-air" target="_blank" rel="noopener">在 itch.io 玩</a>
-      </article>
-      <article class="card">
-        <h2>Simple Game Tutorials</h2>
-        <p>Python/Pygame 教程与示例游戏。</p>
-        <a href="https://simplegametutorials.github.io/" target="_blank" rel="noopener">访问教程</a>
-      </article>
-      <article class="card">
-        <h2>Ludum Dare 仓库</h2>
-        <p>官方 Ludum Dare 组织仓库合集。</p>
-        <a href="https://github.com/orgs/LudumDare/repositories" target="_blank" rel="noopener">浏览仓库</a>
-      </article>
+  <main id="main" role="main">
+    <section id="games" aria-labelledby="games-title">
+      <h2 id="games-title">精选游戏</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Tetris.html (开源)</h3>
+          <p>Box Dude Studio 制作的开源俄罗斯方块，HTML5。</p>
+          <a href="https://boxdude.itch.io/tetrishtml" target="_blank" rel="noopener noreferrer">在 itch.io 玩</a>
+        </article>
+        <article class="card">
+          <h3>PRISMHORN</h3>
+          <p>CSAF 制作的 13KB roguelite，MIT 许可。</p>
+          <a href="https://csaf.itch.io/prismhorn" target="_blank" rel="noopener noreferrer">在 itch.io 玩</a>
+        </article>
+        <article class="card">
+          <h3>Nanoscopic</h3>
+          <p>stgiga 制作的极小体积浏览器游戏。</p>
+          <a href="https://stgiga.itch.io/nanoscopic" target="_blank" rel="noopener noreferrer">在 itch.io 玩</a>
+        </article>
+        <article class="card">
+          <h3>Up in the Air</h3>
+          <p>Julian Fietkau 开源短篇浏览器游戏。</p>
+          <a href="https://jfietkau.itch.io/up-in-the-air" target="_blank" rel="noopener noreferrer">在 itch.io 玩</a>
+        </article>
+      </div>
+    </section>
+    <section id="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title">游戏来源</h2>
+      <ul>
+        <li><a href="https://itch.io/games/html5/tag-open-source" target="_blank" rel="noopener noreferrer">itch.io 开源游戏</a></li>
+        <li><a href="https://github.com/trending" target="_blank" rel="noopener noreferrer">GitHub Trending</a></li>
+        <li><a href="https://github.com/orgs/LudumDare/repositories" target="_blank" rel="noopener noreferrer">Ludum Dare 仓库</a></li>
+        <li><a href="https://simplegametutorials.github.io/" target="_blank" rel="noopener noreferrer">Simple Game Tutorials</a></li>
+      </ul>
+    </section>
+    <section id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">常见问题</h2>
+      <div class="faq">
+        <h3>这些游戏需要安装吗？</h3>
+        <p>所有游戏均在浏览器中运行，无需安装。</p>
+      </div>
+      <div class="faq">
+        <h3>游戏来源是什么？</h3>
+        <p>来自 itch.io 开源游戏、Ludum Dare jam 作品与 Simple Game Tutorials。</p>
+      </div>
     </section>
   </main>
-  <footer>
+  <footer role="contentinfo">
     <p>© 2026 Static Game Hub · 轻量级静态站点 · SEO & GEO 优化</p>
   </footer>
 </body>
